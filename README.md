@@ -1,3 +1,22 @@
-### Hexlet tests and linter status:
 [![Actions Status](https://github.com/VentOs11/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/VentOs11/frontend-project-44/actions)
 <a href="https://codeclimate.com/github/VentOs11/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/c03fee588b5f8c154452/maintainability" /></a>
+
+# Игры Разума
+«Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново.
+
+## Установка
+```
+sudo npm link
+```
+
+## Проверка на чётность
+
+Суть игры в следующем: игрокe показывается случайное число. Ему нужно ответить yes, если число чётное, или no — если нечётное.
+
+### Запуск игры производится
+```
+brain-even
+```
+
+Пример:
+asciinema
