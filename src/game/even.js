@@ -1,4 +1,4 @@
-import runGame from '../main.js';
+import runGame from '../index.js';
 import {
     getRandomNumber,
     isEvenNumber,
