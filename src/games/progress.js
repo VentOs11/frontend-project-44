@@ -1,18 +1,18 @@
 import runGame from '../index.js';
-import { getRandomNumber } from "../getNum.js";
+import { getRandomNumber } from "../utils.js";
 
 const description = 'What number is missing in the progression?';
 
 const progressionLength = 10;
 
-const getArithmeticProgression = () => {
-    let number = getRandomNumber(0, 50);
-    const nextValue = getRandomNumber(2, 5);
+const getArithmeticProgression = (number, step) => {
+    number = getRandomNumber(0, 50);
+    step = getRandomNumber(2, 5);
     const result = [];
 
     for (let i = 0; i < progressionLength; i++) {
         result.push(number);
-        number += nextValue;
+        number += i * step;
     }
     return result;
 };

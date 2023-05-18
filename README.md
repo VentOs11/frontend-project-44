@@ -6,7 +6,7 @@
 
 ## Установка
 ```
-sudo npm link
+sudo npm install brain-games
 ```
 
 ## Проверка на чётность
@@ -19,7 +19,7 @@ brain-even
 ```
 
 Пример:
-asciinema
+https://asciinema.org/a/dvs7dg3QxZ5NqqSfmvIM0HDCu
 
 ################################
 
@@ -33,7 +33,7 @@ brain-calc
 ```
 
 Пример:
-asciinema
+https://asciinema.org/a/JqDAmfahsnEjYPElcuskW4eV5
 
 ##################################
 
@@ -47,7 +47,7 @@ brain-gcd
 ```
 
 Пример:
-asciinema
+https://asciinema.org/a/YToFIHb7ti021GHgAjgH77FI7
 
 ######################################
 
@@ -63,7 +63,7 @@ brain-progression
 Пример:
 asciinema
 
-#########################################
+https://asciinema.org/a/NWQE7y2GOZmGspKr25SvhgePz
 
 ## Простое ли число?
 
@@ -75,4 +75,4 @@ brain-prime
 ```
 
 Пример:
-asciinema
+https://asciinema.org/a/ay9t5MHG8mtE4Mu3sclomEBEB
