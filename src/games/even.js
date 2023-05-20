@@ -4,12 +4,9 @@ import { getRandomNumber } from '../utils.js';
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEvenNumber = (number) => {
-    for (let i = 0; i < number; i++) {
-        if (number % 2 !== 0) {
-            return false;
-        }
+    if (number % 2 !== 0) {
+        return false;
     }
-    return true;
 };
 
 const getQuestionAndAnswer = () => {

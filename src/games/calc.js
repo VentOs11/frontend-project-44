@@ -14,7 +14,7 @@ const calcMathOperation = (symbol, firstValue, secondValue) => {
         case '*':
             return firstValue * secondValue;
         default:
-            return null;
+            throw new Error(`Unknown operator ${symbol}`);
     }
 };
 
