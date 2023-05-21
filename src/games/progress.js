@@ -21,7 +21,7 @@ const getQuestionAndAnswer = () => {
     const result = getArithmeticProgression();
     const randomIndex = getRandomNumber(0, progressionLength);
     const correctAnswer = String(result[randomIndex]);
-    result[randomIndex] = '...';
+    result[randomIndex] = '..';
     return [result, correctAnswer];
 }
 
