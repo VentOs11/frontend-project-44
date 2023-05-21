@@ -12,7 +12,7 @@ const getArithmeticProgression = (number, step) => {
 
     for (let i = 0; i < progressionLength; i++) {
         result.push(number);
-        number += i * step;
+        number += step;
     }
     return result;
 };
@@ -22,7 +22,8 @@ const getQuestionAndAnswer = () => {
     const randomIndex = getRandomNumber(0, progressionLength);
     const correctAnswer = String(result[randomIndex]);
     result[randomIndex] = '..';
-    return [result, correctAnswer];
+    const resToString = result.join(' ').replace(',', ' ');
+    return [resToString, correctAnswer];
 }
 
 export default () => {
