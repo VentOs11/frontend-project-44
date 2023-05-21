@@ -1,5 +1,7 @@
+/* eslint-disable no-param-reassign */
+
 import runGame from '../index.js';
-import { getRandomNumber } from '../utils.js';
+import getRandomNumber from '../utils.js';
 
 const description = 'What number is missing in the progression?';
 
@@ -10,7 +12,7 @@ const getArithmeticProgression = (number, step) => {
   step = getRandomNumber(2, 5);
   const result = [];
 
-  for (let i = 0; i < progressionLength; i++) {
+  for (let i = 0; i < progressionLength; i += 1) {
     result.push(number);
     number += step;
   }
