@@ -8,23 +8,23 @@ const description = 'What number is missing in the progression?';
 const progressionLength = 10;
 
 const getArithmeticProgression = (number, step) => {
-  number = getRandomNumber(0, 50);
-  step = getRandomNumber(2, 5);
   const result = [];
 
   for (let i = 0; i < progressionLength; i += 1) {
+    number += i * step;
     result.push(number);
-    number += step;
   }
   return result;
 };
 
 const getQuestionAndAnswer = () => {
-  const result = getArithmeticProgression();
+  const randomNum = getRandomNumber(0, 50);
+  const randomStep = getRandomNumber(2, 5);
+  const result = getArithmeticProgression(randomNum, randomStep);
   const randomIndex = getRandomNumber(0, progressionLength);
   const correctAnswer = String(result[randomIndex]);
   result[randomIndex] = '..';
-  const resToString = result.join(' ').replace(',', ' ');
+  const resToString = result.join(' ');
   return [resToString, correctAnswer];
 };
 
