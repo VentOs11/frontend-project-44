@@ -11,8 +11,8 @@ const getArithmeticProgression = (number, step) => {
   const result = [];
 
   for (let i = 0; i < progressionLength; i += 1) {
-    number += i * step;
     result.push(number);
+    number += i * step;
   }
   return result;
 };
