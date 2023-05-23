@@ -11,14 +11,14 @@ const getArithmeticProgression = (number, step) => {
   const result = [];
 
   for (let i = 0; i < progressionLength; i += 1) {
-    result.push(number);
-    number += i * step;
+    const element = number + i * step;
+    result.push(element);
   }
   return result;
 };
 
 const getQuestionAndAnswer = () => {
-  const randomNum = getRandomNumber(0, 50);
+  const randomNum = getRandomNumber(0, 20);
   const randomStep = getRandomNumber(2, 5);
   const result = getArithmeticProgression(randomNum, randomStep);
   const randomIndex = getRandomNumber(0, progressionLength);
